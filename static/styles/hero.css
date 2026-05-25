@@ -1,0 +1,121 @@
+.hero {
+  position: relative;
+  height: 100vh;
+  max-height: 960px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  padding-top: 56px;
+  background: #050816;
+  z-index: 0;
+}
+
+.hero__bg {
+  position: absolute;
+  inset: -20% 0 -20% 0;
+  will-change: transform;
+}
+
+.hero__video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero__overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+      180deg,
+      rgba(5, 8, 22, 0.38) 0%,
+      rgba(5, 8, 22, 0.72) 100%
+    ),
+    radial-gradient(circle at center, rgba(84, 120, 255, 0.14), transparent 52%);
+}
+
+.hero__inner {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+}
+
+.hero__content {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.hero__eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 16px;
+  padding: 10px 16px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.12);
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  backdrop-filter: blur(12px);
+}
+
+.hero__title {
+  font-size: 52px;
+  line-height: 1;
+  letter-spacing: -0.05em;
+  color: #fff;
+  text-wrap: balance;
+}
+
+.hero__text {
+  max-width: 700px;
+  margin: 16px auto 0;
+  font-size: 18px;
+  line-height: 1.75;
+  color: rgba(255, 255, 255, 0.84);
+}
+
+.hero__stats {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.hero__stat {
+  padding: 16px 14px;
+  border-radius: 22px;
+  background: var(--hero-panel);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(14px);
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.hero__stat:hover {
+  transform: translateY(-4px);
+  border-color: rgba(108, 140, 255, 0.4);
+}
+
+.hero__stat strong {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 26px;
+  font-weight: 800;
+  color: #fff;
+}
+
+.hero__stat span {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.78);
+  line-height: 1.5;
+}
+
+.hero__buttons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 14px;
+}

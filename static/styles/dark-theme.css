@@ -1,0 +1,20 @@
+:root {
+  --page-bg: #0b0f19;
+  --surface: #101827;
+  --surface-2: #0f172a;
+  --text: #e8eefc;
+  --muted: rgba(232, 238, 252, 0.72);
+  --border: rgba(255, 255, 255, 0.08);
+  --shadow: 0 30px 80px rgba(0, 0, 0, 0.35);
+  --accent: #6c8cff;
+  --accent-strong: #4f70ff;
+  --hero-panel: rgba(255, 255, 255, 0.08);
+  --intro-bg: #101827;
+  --header-bg: rgba(9, 13, 23, 0.72);
+  --header-text: #ffffff;
+  --header-shadow: none;
+}
+
+.project-slide__category {
+  color: var(--accent-strong);
+}

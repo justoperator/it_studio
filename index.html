@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="IT студія повного циклу: створення сайтів, UI/UX дизайну, digital-продуктів, брендингу та технічної підтримки для бізнесу." />
+  <meta name="keywords" content="IT студія, розробка сайтів, вебдизайн, UI/UX, брендинг, digital агентство, створення сайтів" />
+  <meta name="author" content="FavCoders" />
+  <title>FavCoders - IT студія повного циклу</title>
+
+  <link rel="apple-touch-icon" sizes="57x57" href="static/icons/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="static/icons/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="static/icons/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="static/icons/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="static/icons/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="static/icons/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="static/icons/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="static/icons/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="static/icons/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="static/icons/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="static/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="static/icons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="static/icons/favicon-16x16.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="static/styles/style.css" />
+  <link rel="stylesheet" href="static/styles/dark-theme.css" id="theme-style" />
+</head>
+<body>
+  <div class="cookie-bar" id="cookieBar">
+
+    <p class="cookie-bar__text">
+      Ми використовуємо cookie, щоб покращити швидкість і зручність сайту.
+    </p>
+
+    <button class="cookie-bar__button" id="cookieAccept">Зрозуміло</button>
+
+  </div>
+
+  <button class="go-top" id="goTop" aria-label="Повернутися на початок">↑</button>
+
+  <header class="header" id="header">
+
+    <div class="container header__inner">
+
+      <a href="#" class="logo__block" aria-label="FavCoders">
+
+        <img src="static/imgs/icon.webp" alt="Site logo" class="site__logo">
+
+        <h1 class="header__logo logo">FavCoders</h1>
+
+      </a>
+
+      <nav class="header__nav nav" id="mobileMenu" aria-label="Головна навігація">
+
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#services" class="nav__link">Послуги</a>
+          </li>
+          <li class="nav__item">
+            <a href="#advantages" class="nav__link">Переваги</a>
+          </li>
+          <li class="nav__item">
+            <a href="#projects" class="nav__link">Проєкти</a>
+          </li>
+          <li class="nav__item">
+            <a href="#process" class="nav__link">Процес</a>
+          </li>
+          <li class="nav__item">
+            <a href="#contacts" class="nav__link">Контакти</a>
+          </li>
+        </ul>
+
+      </nav>
+
+      <div class="header__actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Перемкнути тему">☾</button>
+
+        <button class="header__button modal-open">Обговорити проєкт</button>
+
+        <button class="burger" id="burger" aria-label="Відкрити меню" aria-controls="mobileMenu" aria-expanded="false">
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="nav-overlay" id="navOverlay"></div>
+
+  <main class="page">
+
+    <section class="hero" id="hero">
+      <div class="hero__bg" id="heroBg">
+        <video class="hero__video" autoplay muted loop playsinline preload="metadata">
+          <source src="static/videos/hero_video.mp4" type="video/mp4" />
+        </video>
+        <div class="hero__overlay"></div>
+      </div>
+
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <p class="hero__eyebrow">IT студія повного циклу</p>
+
+          <h1 class="hero__title">
+            Створюємо цифрові продукти, що продають, утримують і запам'ятовуються
+          </h1>
+
+          <p class="hero__text">
+            Проєктуємо сайти, вебсервіси та дизайн-системи для бізнесу, який хоче бути швидшим, сучаснішим і помітнішим у своїй ніші.
+          </p>
+
+          <div class="hero__stats">
+            <div class="hero__stat">
+              <strong>100+</strong>
+              <span>успішних проєктів</span>
+            </div>
+            <div class="hero__stat">
+              <strong>8 років</strong>
+              <span>досвіду в digital</span>
+            </div>
+            <div class="hero__stat">
+              <strong>24/7</strong>
+              <span>підтримка та супровід</span>
+            </div>
+          </div>
+
+          <div class="hero__buttons">
+            <a href="#projects" class="primary-button">Дивитися кейси</a>
+            <button class="secondary-button modal-open">Отримати консультацію</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="intro section section--overlap" id="intro">
+      <div class="container">
+        <div class="intro__panel js-reveal">
+          <div class="intro__copy">
+            <p class="section-label">Чому ми</p>
+            <h2 class="section-title">Будуємо зрозумілий digital-інструмент для росту бізнесу</h2>
+          </div>
+
+          <div class="intro__cards">
+            <article class="mini-card">
+              <span class="mini-card__num">01</span>
+              <h3 class="mini-card__title">Стратегія</h3>
+              <p class="mini-card__text">Починаємо з аналізу ніші, аудиторії та цілей. Щоб рішення було ефективним, а не просто красивим.</p>
+            </article>
+            <article class="mini-card">
+              <span class="mini-card__num">02</span>
+              <h3 class="mini-card__title">Дизайн</h3>
+              <p class="mini-card__text">Створюємо сучасну візуальну мову, яка підсилює бренд і веде користувача до дії.</p>
+            </article>
+            <article class="mini-card">
+              <span class="mini-card__num">03</span>
+              <h3 class="mini-card__title">Розробка</h3>
+              <p class="mini-card__text">Чистий, швидкий і масштабований код з фокусом на SEO, mobile-first та UX.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="services section" id="services">
+      <div class="container">
+        <div class="section-head js-reveal">
+          <p class="section-label">Послуги</p>
+          <h2 class="section-title">Повний цикл IT-розробки для брендів, стартапів і продуктів</h2>
+          <p class="section-text">Закриваємо весь шлях: від ідеї та прототипу до запуску, оптимізації та розвитку після релізу.</p>
+        </div>
+
+        <div class="services__grid">
+          <article class="service-card">
+            <div class="service-card__icon">01</div>
+            <h3 class="service-card__title">Web Development</h3>
+            <p class="service-card__text">Лендінги, корпоративні сайти, інтернет-магазини та вебсервіси зі швидкою адаптацією під бізнес-цілі.</p>
+          </article>
+          <article class="service-card">
+            <div class="service-card__icon">02</div>
+            <h3 class="service-card__title">UI/UX Design</h3>
+            <p class="service-card__text">Дослідження, прототипи, дизайн-системи та візуал, який реально піднімає конверсію.</p>
+          </article>
+          <article class="service-card">
+            <div class="service-card__icon">03</div>
+            <h3 class="service-card__title">Brand Identity</h3>
+            <p class="service-card__text">Логотипи, бренд-гайд, візуальний стиль і подача, що формують сильне перше враження.</p>
+          </article>
+          <article class="service-card">
+            <div class="service-card__icon">04</div>
+            <h3 class="service-card__title">SEO & Performance</h3>
+            <p class="service-card__text">Технічна оптимізація, структура, семантика і швидкість завантаження для кращого ранжування.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="advantages section" id="advantages">
+      <div class="container">
+        <div class="section-head js-reveal">
+          <p class="section-label">Переваги</p>
+          <h2 class="section-title">Сайт, що виглядає сучасно і працює як інструмент продажів</h2>
+        </div>
+
+        <div class="advantages__grid">
+          <article class="advantage-card">
+            <h3 class="advantage-card__title">Швидкість</h3>
+            <p class="advantage-card__text">Мінімум зайвих скриптів, грамотна структура та оптимізація для мобільних і швидкого завантаження.</p>
+          </article>
+          <article class="advantage-card">
+            <h3 class="advantage-card__title">SEO-ready</h3>
+            <p class="advantage-card__text">Правильна ієрархія заголовків, мета-дані та семантика, яку легко індексують пошукові системи.</p>
+          </article>
+          <article class="advantage-card">
+            <h3 class="advantage-card__title">Гнучкість</h3>
+            <p class="advantage-card__text">Структура дозволяє легко додавати нові секції, кейси, форми та маркетингові блоки.</p>
+          </article>
+          <article class="advantage-card">
+            <h3 class="advantage-card__title">Конверсія</h3>
+            <p class="advantage-card__text">Усе на сторінці підштовхує до дії: CTA, форма, довіра, кейси, цифри та живі анімації.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects section" id="projects">
+      <div class="container">
+
+        <div class="section-head js-reveal">
+          <p class="section-label">
+            Галерея кейсів
+          </p>
+
+          <h2 class="section-title">
+            Реальні digital-продукти,
+            які демонструють наш підхід
+            до дизайну та розробки
+          </h2>
+
+          <p class="section-text">
+            Від AI-сервісів та e-commerce
+            платформ до esports і mobile-рішень -
+            кожен проєкт створений
+            з фокусом на UX, швидкість
+            та сучасний візуальний стиль.
+          </p>
+        </div>
+
+        <div class="swiper projects-slider js-reveal">
+
+          <div class="swiper-wrapper">
+
+            <div
+              class="swiper-slide project-slide"
+              style="
+                background-image:
+                url('static/imgs/project_1.png');
+              "
+            >
+              <div class="project-slide__content">
+
+                <p class="project-slide__category">
+                  EdTech
+                </p>
+
+                <h3 class="project-slide__title">
+                  Headway
+                </h3>
+
+                <p class="project-slide__text">
+                  Платформа для онлайн-навчання,
+                  яка вже об'єднала мільйони
+                  користувачів iOS та Android.
+                  Ми допомогли створити сучасний
+                  вебдосвід для швидкого доступу
+                  до навчальних матеріалів.
+                </p>
+
+              </div>
+            </div>
+
+            <div
+              class="swiper-slide project-slide"
+              style="
+                background-image:
+                url('static/imgs/project_2.png');
+              "
+            >
+              <div class="project-slide__content">
+
+                <p class="project-slide__category">
+                  E-commerce
+                </p>
+
+                <h3 class="project-slide__title">
+                  Reno
+                </h3>
+
+                <p class="project-slide__text">
+                  Інтерактивний онлайн-магазин
+                  розсувних дверей з конфігуратором,
+                  3D-візуалізацією та зручним UX
+                  для B2C та B2B клієнтів.
+                </p>
+
+              </div>
+            </div>
+
+            <div
+              class="swiper-slide project-slide"
+              style="
+                background-image:
+                url('static/imgs/project_3.png');
+              "
+            >
+              <div class="project-slide__content">
+
+                <p class="project-slide__category">
+                  Esports
+                </p>
+
+                <h3 class="project-slide__title">
+                  NAVI
+                </h3>
+
+                <p class="project-slide__text">
+                  Комплексний сайт для однієї
+                  з найвідоміших кіберспортивних
+                  організацій світу з акцентом
+                  на бренд, медіа та фанатський
+                  досвід.
+                </p>
+
+              </div>
+            </div>
+
+            <div
+              class="swiper-slide project-slide"
+              style="
+                background-image:
+                url('static/imgs/project_4.png');
+              "
+            >
+              <div class="project-slide__content">
+
+                <p class="project-slide__category">
+                  AI / Mobile
+                </p>
+
+                <h3 class="project-slide__title">
+                  SKU Recognizer
+                </h3>
+
+                <p class="project-slide__text">
+                  AI-застосунок для iOS,
+                  який автоматично розпізнає
+                  товари на полицях через
+                  computer vision та формує
+                  детальну аналітику для
+                  торгових представників.
+                </p>
+
+              </div>
+            </div>
+
+          </div>
+
+          <div class="swiper-pagination"></div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="process section" id="process">
+      <div class="container">
+        <div class="section-head js-reveal">
+          <p class="section-label">Процес</p>
+          <h2 class="section-title">Прозорий шлях від першого дзвінка до готового продукту</h2>
+        </div>
+
+        <div class="process__grid">
+          <article class="process-card">
+            <span class="process-card__step">01</span>
+            <h3 class="process-card__title">Бриф і аналіз</h3>
+            <p class="process-card__text">Вивчаємо бізнес, конкурентів і користувача, щоб не робити випадкових рішень.</p>
+          </article>
+          <article class="process-card">
+            <span class="process-card__step">02</span>
+            <h3 class="process-card__title">Прототип і структура</h3>
+            <p class="process-card__text">Будуємо логічну архітектуру сторінок, блоків і сценаріїв взаємодії.</p>
+          </article>
+          <article class="process-card">
+            <span class="process-card__step">03</span>
+            <h3 class="process-card__title">Дизайн і контент</h3>
+            <p class="process-card__text">Формуємо стиль, підбираємо тон комунікації та збираємо зміст для кожного екрану.</p>
+          </article>
+          <article class="process-card">
+            <span class="process-card__step">04</span>
+            <h3 class="process-card__title">Розробка і запуск</h3>
+            <p class="process-card__text">Верстаємо, тестуємо, оптимізуємо і передаємо готовий сайт для запуску.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-cta section" id="contacts">
+      <div class="container">
+        <div class="contact-cta__box js-reveal">
+          <div class="contact-cta__content">
+            <p class="section-label">Контакти</p>
+            <h2 class="section-title">Потрібен сайт, що реально працює?</h2>
+            <p class="section-text">Напишіть нам - запропонуємо структуру, візуальний напрямок і технічне рішення під ваш бюджет і терміни.</p>
+          </div>
+          <div class="contact-cta__actions">
+            <button class="primary-button modal-open">Замовити консультацію</button>
+            <a href="mailto:hello@favcoders.ua" class="secondary-link">hello@favcoders.ua</a>
+            <a href="tel:+380991112233" class="secondary-link">+380 99 111 22 33</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+
+      <div class="footer__brand">
+
+        <a
+          href="#"
+          class="footer__logo-block"
+          aria-label="FavCoders"
+        >
+          <img
+            src="static/imgs/icon.webp"
+            alt="FavCoders logo"
+            class="footer__logo-image"
+          >
+
+          <span class="footer__logo-text">
+            FavCoders
+          </span>
+        </a>
+
+        <p class="footer__text">
+          IT студія повного циклу для брендів,
+          стартапів і digital-продуктів,
+          які хочуть виглядати сучасно,
+          працювати швидко та рости онлайн.
+        </p>
+
+      </div>
+
+      <div class="footer__nav">
+
+        <div class="footer__column">
+          <span class="footer__title">
+            Навігація
+          </span>
+
+          <a href="#services" class="footer__link">
+            Послуги
+          </a>
+
+          <a href="#advantages" class="footer__link">
+            Переваги
+          </a>
+
+          <a href="#projects" class="footer__link">
+            Проєкти
+          </a>
+
+          <a href="#contacts" class="footer__link">
+            Контакти
+          </a>
+        </div>
+
+        <div class="footer__column">
+          <span class="footer__title">
+            Контакти
+          </span>
+
+          <a
+            href="mailto:hello@favcoders.ua"
+            class="footer__link"
+          >
+            hello@favcoders.ua
+          </a>
+
+          <a
+            href="tel:+380991112233"
+            class="footer__link"
+          >
+            +380 99 111 22 33
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="footer__bottom">
+      <div class="container footer__bottom-inner">
+
+        <p class="footer__copyright">
+          © 2026 FavCoders. Усі права захищені.
+        </p>
+
+        <p class="footer__made">
+          Crafted with precision.
+        </p>
+
+      </div>
+    </div>
+  </footer>
+
+  <div class="modal" id="modal">
+    <div class="modal__overlay modal-close"></div>
+    <div class="modal__body">
+      <button class="modal__close modal-close" aria-label="Закрити вікно">×</button>
+      <h3 class="modal__title">Обговорити проєкт</h3>
+      <p class="modal__text">Залиште контакти, і ми зв'яжемося для короткого брифу та консультації.</p>
+      <form class="form" id="contactForm" novalidate>
+        <input type="text" class="form__input" placeholder="Ваше ім'я" required />
+        <input type="email" class="form__input" id="emailField" placeholder="Email" required />
+        <button class="primary-button form__button" type="submit">Надіслати</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js"></script>
+
+  <script type="module" src="static/scripts/script.js"></script>
+</body>
+</html>

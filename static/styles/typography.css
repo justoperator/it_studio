@@ -1,0 +1,38 @@
+.section-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 16px;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: var(--accent);
+}
+
+.section-label::before {
+  content: "";
+  width: 24px;
+  height: 1px;
+  background: var(--accent);
+}
+
+.section-title {
+  font-size: 28px;
+  line-height: 1.06;
+  letter-spacing: -0.04em;
+}
+
+.section-text {
+  margin-top: 18px;
+  max-width: 720px;
+  font-size: 18px;
+  line-height: 1.7;
+  color: var(--muted);
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 900;
+  letter-spacing: -0.04em;
+}

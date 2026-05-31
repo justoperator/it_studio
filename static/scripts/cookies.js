@@ -1,10 +1,17 @@
 export function initCookies() {
-    const cookieBar = document.querySelector("#cookieBar");
-    const cookieAccept = document.querySelector("#cookieAccept");
+    const cookieBar = document.querySelector(
+        "#cookieBar"
+    );
+
+    const cookieAccept = document.querySelector(
+        "#cookieAccept"
+    );
 
     if (!cookieBar || !cookieAccept) return;
 
-    const accepted = Cookies.get("cookieAccepted");
+    const accepted = localStorage.getItem(
+        "cookieAccepted"
+    );
 
     if (accepted === "true") {
         cookieBar.classList.add(
@@ -12,15 +19,12 @@ export function initCookies() {
         );
     }
 
-    cookieAccept.addEventListener("click", () => {
-            Cookies.set(
+    cookieAccept.addEventListener(
+        "click",
+        () => {
+            localStorage.setItem(
                 "cookieAccepted",
-                "true",
-                {
-                    expires: 365,
-                    path: "/",
-                    sameSite: "Lax"
-                }
+                "true"
             );
 
             cookieBar.classList.add(

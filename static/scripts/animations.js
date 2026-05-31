@@ -122,14 +122,14 @@ export function initAnimations() {
         });
     }
 
-    document.querySelectorAll(".section-label").forEach(function (element) {
-            gsap.from(element, {
+    document.querySelectorAll(".section-label").forEach((e) => {
+            gsap.from(e, {
                 opacity: 0,
                 x: -14,
                 duration: 0.55,
                 ease: "power2.out",
                 scrollTrigger: {
-                    trigger: element,
+                    trigger: e,
                     start: "top 90%"
                 }
             });
